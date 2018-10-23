@@ -46,13 +46,13 @@ namespace PracticaConsultorio
             txtPeso.Text = " ";
             txtAltura.Text = " ";
             txtEnfermedadesCronicas.Text = " ";
-            //if (string.IsNullOrEmpty(txtNombre.Text)|| string.IsNullOrEmpty(txtDireccion.Text)||
-            //    string.IsNullOrEmpty(txtTelefono.Text)|| string.IsNullOrEmpty(txtEdad.Text)||
-            //    string.IsNullOrEmpty(txtPeso.Text)|| string.IsNullOrEmpty(txtAltura.Text)||
-            //    string.IsNullOrEmpty(txtEnfermedadesCronicas.Text))
-            //{
-
-            //}
+            if (string.IsNullOrEmpty(txtNombre.Text)|| string.IsNullOrEmpty(txtDireccion.Text)||
+                string.IsNullOrEmpty(txtTelefono.Text)|| string.IsNullOrEmpty(txtEdad.Text)||
+                string.IsNullOrEmpty(txtPeso.Text)|| string.IsNullOrEmpty(txtAltura.Text)||
+               string.IsNullOrEmpty(txtEnfermedadesCronicas.Text))
+            {
+                txtError.Text = "Falta llenar todos los espacios";
+            }
             gridNuevoPaciente.Visibility = Visibility.Collapsed;
 
         }
