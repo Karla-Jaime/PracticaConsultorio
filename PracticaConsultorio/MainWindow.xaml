@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PracticaConsultorio"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="Azure">
+    <Grid x:Name="___Sin_nombre_" Background="Azure">
         <ListBox x:Name="lstPacientes" HorizontalAlignment="Left" Height="360" Margin="15,25,0,0" VerticalAlignment="Top" Width="140" SelectionChanged="lstPacientes_SelectionChanged"/>
         <Button x:Name="btnCrearNuevoPaciente" Content="Nuevo Paciente" HorizontalAlignment="Left" Margin="15,395,0,0" VerticalAlignment="Top" Width="140" Click="btnCrearNuevoPaciente_Click"/>
         <Button x:Name="btnNuevaConsulta" Content="Nueva Consulta" HorizontalAlignment="Left" Margin="170,33,0,0" VerticalAlignment="Top" Width="100" Click="btnNuevaConsulta_Click"/>
@@ -53,5 +53,6 @@
             <TextBlock HorizontalAlignment="Left" Margin="15,58,0,0" TextWrapping="Wrap" Text="Enfermedades Cronicas:" VerticalAlignment="Top"/>
             <TextBox x:Name="txtEnfermedadesCronicasConsulta" HorizontalAlignment="Left" Height="23" Margin="15,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="583" Grid.ColumnSpan="2"/>
         </Grid>
+        <Button x:Name="btnHistorialConsultas" Content="Historial de las Consultas" HorizontalAlignment="Left" Margin="280,34,0,0" VerticalAlignment="Top" Width="160" Click="btnHistorialConsultas_Click"/>
     </Grid>
 </Window>

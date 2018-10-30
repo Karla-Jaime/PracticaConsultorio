@@ -54,6 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ElmentoConsultaControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistorialConsultasWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -64,6 +72,12 @@
     </Compile>
     <Compile Include="Consulta.cs" />
     <Compile Include="Datos.cs" />
+    <Compile Include="ElmentoConsultaControl.xaml.cs">
+      <DependentUpon>ElmentoConsultaControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialConsultasWindows.xaml.cs">
+      <DependentUpon>HistorialConsultasWindows.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -28,6 +28,8 @@ namespace PracticaConsultorio
 
         private void btnGuardarNuevoPaciente_Click(object sender, RoutedEventArgs e)
         {
+
+
             Paciente nuevoPaciente = new Paciente(); //Se creo una nueva variable y se inicializo.
             nuevoPaciente.Nombre = txtNombre.Text;
             nuevoPaciente.Direccion = txtDireccion.Text;
@@ -47,13 +49,7 @@ namespace PracticaConsultorio
             txtPeso.Text = " ";
             txtAltura.Text = " ";
             txtEnfermedadesCronicas.Text = " ";
-            if (string.IsNullOrEmpty(txtNombre.Text)|| string.IsNullOrEmpty(txtDireccion.Text)||
-                string.IsNullOrEmpty(txtTelefono.Text)|| string.IsNullOrEmpty(txtEdad.Text)||
-                string.IsNullOrEmpty(txtPeso.Text)|| string.IsNullOrEmpty(txtAltura.Text)||
-               string.IsNullOrEmpty(txtEnfermedadesCronicas.Text))
-            {
-                txtError.Text = "Falta llenar todos los espacios";
-            }
+            
             gridNuevoPaciente.Visibility = Visibility.Collapsed;
 
         }
@@ -125,9 +121,17 @@ namespace PracticaConsultorio
             txtRecetaConsulta.Text = "";
             txtFechaConsulta.Text = "";
 
+            var consultas = Datos.consultas;
+
             gridFormularioConsulta.Visibility = Visibility.Collapsed;
         }
 
-        
+        private void btnHistorialConsultas_Click(object sender, RoutedEventArgs e)
+        {
+            var paciente = Datos.pacientes[lstPacientes.SelectedIndex];
+            var ventanaHistorial = new HistorialConsultasWindows(paciente);
+            ventanaHistorial.Show();
+
+        }
     }
 }

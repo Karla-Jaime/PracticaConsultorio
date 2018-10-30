@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaConsultorio
 {
-    class Paciente
+    public class Paciente //Es publico para que se pueda utilizar en otros lados
     {
         public string Nombre { get; set; }
         public string Direccion { get; set; }

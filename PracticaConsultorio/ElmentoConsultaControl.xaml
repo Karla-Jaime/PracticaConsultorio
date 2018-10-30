@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="PracticaConsultorio.ElmentoConsultaControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PracticaConsultorio"
+             mc:Ignorable="d" Height="255" Width="750">
+    <Grid Background="#FFB0EAEA">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Sintomas0" Grid.Column="0" Grid.Row="0"></TextBlock>
+        <TextBlock Text="Dianostico0" Grid.Column="1" Grid.Row="0"></TextBlock>
+        <TextBlock Text="Receta" Grid.Column="0" Grid.Row="1"></TextBlock>
+        <TextBlock Text="Fecha" Grid.Column="1" Grid.Row="1"></TextBlock>
+    </Grid>
+</UserControl>
