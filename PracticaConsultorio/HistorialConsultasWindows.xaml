@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="HistorialConsultasWindows" Height="702" Width="479">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="24,30,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="24,59,0,0" TextWrapping="Wrap" Text="Nombre del Paciente" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,30,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="lblNombrePaciente" HorizontalAlignment="Left" Margin="24,59,0,0" TextWrapping="Wrap" Text="Nombre del Paciente" VerticalAlignment="Top" FontSize="14"/>
         <ScrollViewer HorizontalAlignment="Left" Height="545" VerticalAlignment="Top" Width="440" Margin="15,90,0,0">
             <StackPanel  Name="stckHistorialConsultas"/>
         </ScrollViewer>

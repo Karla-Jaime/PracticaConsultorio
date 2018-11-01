@@ -20,9 +20,17 @@ namespace PracticaConsultorio
     /// </summary>
     public partial class ElmentoConsultaControl : UserControl
     {
-        public ElmentoConsultaControl()
+        Consulta consulta;
+     
+        public ElmentoConsultaControl(Consulta consulta)
         {
             InitializeComponent();
+            this.consulta = consulta;
+
+            lblSintomas.Text = consulta.Sintomas;
+            lblDiagnostico.Text = consulta.Diagnostico;
+            lblReceta.Text = consulta.Receta;
+            lblFecha.Text = consulta.Fecha.ToString();
         }
     }
 }

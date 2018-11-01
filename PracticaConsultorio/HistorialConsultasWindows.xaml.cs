@@ -24,7 +24,17 @@ namespace PracticaConsultorio
         {
             InitializeComponent();
             //This toma el valor de paciente de la variable global mientras que el otro es paciente var local
-            this.paciente = paciente; 
+            this.paciente = paciente;
+
+            lblNombrePaciente.Text = paciente.Nombre;
+            // Crear una nueva variable de los tipos de elementos 
+            foreach (Consulta consulta in Datos.consultas)
+            {
+                var nuevoElementoConsulta = new ElmentoConsultaControl(consulta);
+                //Añadir al stackPanel
+                //Los elementos se guardan en la propiedad children
+                stckHistorialConsultas.Children.Add(nuevoElementoConsulta);
+            }
         }
     }
 }
